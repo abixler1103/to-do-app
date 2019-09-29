@@ -1,0 +1,39 @@
+body {
+  text-align: center;
+  padding-top: 100px;
+  background: url(../images/background-2.jpg);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+h1 {
+  color: #8265af;
+  font-weight: bold;
+  font-size: 75px;
+}
+
+ul {
+  text-align: left;
+  padding-left: 390px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 22px;
+}
+
+button {
+  background-color: #8265af;
+  margin-left: 10px;
+  color: white;
+
+}
+
+#addToDoForm {
+  font-size: 22px;
+}
+
+input {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
