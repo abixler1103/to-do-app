@@ -8,24 +8,28 @@ function onReady() {
     let title = newToDoText.value;
 
     // create a new li
-    let newLi = document.createElement('ul');
+    let newLi = document.createElement('li');
 
     // create a new input
     let checkbox = document.createElement('input');
 
     // create delete
     let remove = document.createElement('button');
+    remove.onclick = function() {
+      var ulElem = document.getElementById('toDoList');
+      ulElem.removeChild(newLi);
+    };
 
     // set the input's type to checkbox
-    checkbox.type = "checkbox";
+    checkbox.type = 'checkbox';
 
     // set the text type to text
-    remove.type = "remove";
+    remove.type = 'remove';
 
     // set the title
     newLi.textContent = title;
 
-    remove.textContent = "remove";
+    remove.textContent = 'remove';
 
     // attach the checkbox to the li
     newLi.prepend(checkbox);
@@ -41,11 +45,6 @@ function onReady() {
   });
 }
 
-var listItems = document.getElementsByTagName("ul"); // ordocument.querySelectorAll("ul"); 
-for (var i = 0; i < listItems.length; i++) {
-listItems[i].onclick = function() {this.parentNode.removeChild(this);}
-}
-
-window.onload = function () {
+window.onload = function() {
   onReady();
 };

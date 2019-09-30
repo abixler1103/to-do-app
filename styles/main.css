@@ -21,6 +21,10 @@ ul {
   font-size: 22px;
 }
 
+li {
+  list-style-type: none;
+}
+
 button {
   background-color: #8265af;
   margin-left: 10px;
@@ -36,4 +40,3 @@ input {
   margin-right: 10px;
   margin-left: 10px;
 }
-
