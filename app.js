@@ -11,7 +11,7 @@ function onReady() {
       complete: false,
       id: [0];
     });
-    newToDoText.value = '';
+    newToDoText.value =  '';
     renderTheUI();
   }
   function renderTheUI() {
@@ -37,6 +37,6 @@ function onReady() {
   renderTheUI();
 }
 
-window.onload = function() {
+window.onload =  function() {
   onReady();
 };
